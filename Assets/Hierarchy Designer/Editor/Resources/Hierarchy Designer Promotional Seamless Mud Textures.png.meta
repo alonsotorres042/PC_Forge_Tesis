@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 57523d702f2173142b65ac9d7548a2d2
+guid: f9945415059a3004da7de5ca891fb52a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,10 +69,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 32
-    resizeAlgorithm: 1
+    maxTextureSize: 256
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 3
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,6 +117,6 @@ AssetOrigin:
   productId: 273928
   packageName: Hierarchy Designer
   packageVersion: 2.2.0
-  assetPath: Assets/Hierarchy Designer/Editor/Resources/Hierarchy Designer Separator
-    Background Image Default Faded Sideways.png
+  assetPath: Assets/Hierarchy Designer/Editor/Resources/Hierarchy Designer Promotional
+    Seamless Mud Textures.png
   uploadId: 782371

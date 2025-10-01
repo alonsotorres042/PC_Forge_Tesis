@@ -18,6 +18,8 @@ public class ThermalPaste : MonoBehaviour
     private bool _isActive = false;
     private bool _filledTriggered = false;
 
+    public bool IsApplied;
+
     private void Start()
     {
         _initialScale = transform.localScale;

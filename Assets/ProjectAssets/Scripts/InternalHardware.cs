@@ -18,6 +18,7 @@ public class InternalHardware : MonoBehaviour
 
     [Header("Events")]
     public UnityEvent OnComponentInstalled; // El evento p�blico
+    public UnityEvent<ComponentData> OnComponentInstalledParameter;
 
     public void SnapToCorrectPosition(Transform motherboard)
     {
@@ -37,6 +38,11 @@ public class InternalHardware : MonoBehaviour
 
     public void DeactivateComponents()
     {
+
+        //NEW THING
+        ComponentData data = GetComponent<AssemblyComponent>().Data;
+        OnComponentInstalledParameter?.Invoke(data);
+        //------------
         if (_compGrabbable != null)
         {
             _compGrabbable.enabled = false;
@@ -74,5 +80,6 @@ public class InternalHardware : MonoBehaviour
             _compRigidbody.angularVelocity = Vector3.zero;
         }
         OnComponentInstalled?.Invoke();
+
     }
 }

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6af376a18c32344cbf14c48ea560153, type: 3}
-  m_Name: ThermanPaste_Generic
+  m_Name: ThermalPaste_Generic
   m_EditorClassIdentifier: 
   Name: "Pasta t\xE9rmica"
   Features:

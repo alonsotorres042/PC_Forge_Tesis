@@ -9,17 +9,30 @@ public class InfoPanelRay : MonoBehaviour
     [SerializeField] float _rayDistance;
     [SerializeField] LayerMask _layers;
 
-
     [SerializeField] TextMeshProUGUI _componentName;
     [SerializeField] TextMeshProUGUI _componentFeatures;
 
     private AssemblyComponent _lastComponent;
 
+    private LineRenderer _lineRenderer;
+
+    private void Start()
+    {
+        _lineRenderer = GetComponent<LineRenderer>();
+    }
     void Update()
     {
         if (OVRInput.GetDown(OVRInput.Button.Two, OVRInput.Controller.RTouch))
         {
             SwitchPanelActive();
+        }
+
+        if (_lineRenderer.enabled)
+        {
+            _lineRenderer.SetPosition(0, transform.position);
+
+            Vector3 targetPos = transform.position + transform.TransformDirection(Vector3.forward *_rayDistance);
+            _lineRenderer.SetPosition(1, targetPos);
         }
     }
 
@@ -41,6 +54,7 @@ public class InfoPanelRay : MonoBehaviour
     public void SwitchPanelActive()
     {
         _panel.SetActive(!_panel.activeSelf);
+        _lineRenderer.enabled = !_lineRenderer.enabled;
     }
     public void ApplyUIInfo(ComponentData componentData)
     {

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5189306861859044d884b13edb57b00c
+guid: ec5914ef33dea4d409c54f6654ee676a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,10 +69,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,10 +121,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: WindowsStoreApps
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -136,23 +136,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Capa 2 copia_0
+      name: arrow-24-512_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 27
-        width: 1924
-        height: 512
+        x: 84
+        y: 0
+        width: 348
+        height: 511
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 456, y: 36, z: 149, w: 352}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 136c4a0089a7db343b8f345016267c5d
-      internalID: 2027919499
+      spriteID: 779a11d16a6b34448b0733298ab1c404
+      internalID: 2021427349
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: bbe08e52e38f74a48baa9bdf9f5456c9
+    spriteID: ab40ed5fb946f80448a33a3bfec77376
     internalID: 0
     vertices: []
     indices: 
@@ -171,7 +171,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Capa 2 copia_0: 2027919499
+      arrow-24-512_0: 2021427349
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

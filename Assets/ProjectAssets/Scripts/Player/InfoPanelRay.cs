@@ -13,7 +13,6 @@ public class InfoPanelRay : MonoBehaviour
     [SerializeField] TextMeshProUGUI _componentFeatures;
 
     private AssemblyComponent _lastComponent;
-
     private LineRenderer _lineRenderer;
 
     private void Start()
@@ -35,7 +34,6 @@ public class InfoPanelRay : MonoBehaviour
             _lineRenderer.SetPosition(1, targetPos);
         }
     }
-
     private void FixedUpdate()
     {
         RaycastHit hit;

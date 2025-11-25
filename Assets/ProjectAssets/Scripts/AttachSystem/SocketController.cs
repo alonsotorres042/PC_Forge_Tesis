@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
-using Oculus.Interaction;
 
 public class SocketController : MonoBehaviour
 {
@@ -10,6 +9,7 @@ public class SocketController : MonoBehaviour
 
     public bool CanConnect;
     public bool IsConnected;
+    public bool IsAssembled;
 
     private void Start()
     {
@@ -33,17 +33,30 @@ public class SocketController : MonoBehaviour
         CanConnect = set;
     }
     public void SetConnection(bool set)
-    {
+    {        
+        if (!CanConnect) return;
+
         IsConnected = set;
+    }
+    public void SetAssemble(bool set)
+    {
+        IsAssembled = set;
     }
     public void RequestConnection(Collider other)
     {
         if (!CanConnect) return;
 
-        if (EvaluatePartnersConnection())
+        if (!EvaluatePartnersConnection()) return;
+
+        if (other.TryGetComponent<AssemblyComponent>(out AssemblyComponent otherComponent))
         {
-            other.GetComponent<AssemblyComponent>().Assemble(_group.TargetTransform);
+            if (otherComponent.Data != _group._targetComponent) return;
+
+            otherComponent.Assemble(_group.TargetTransform);
+            
+            SetAssemble(true);
         }
+        
     }
     public bool EvaluatePartnersConnection()
     {

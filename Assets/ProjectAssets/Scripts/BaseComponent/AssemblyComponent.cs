@@ -12,9 +12,12 @@ public class AssemblyComponent : MonoBehaviour
     public UnityEvent OnAssembled;
 
     private Rigidbody _rigidbody;
+    private BoxCollider _boxCollider;
+
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
+        _boxCollider = GetComponent<BoxCollider>();
     }
     public void Assemble(Transform target)
     {
@@ -24,7 +27,9 @@ public class AssemblyComponent : MonoBehaviour
         {
             behaviour.enabled = false;
         }
+
         _rigidbody.isKinematic = true;
+        _boxCollider.isTrigger = true;
 
         transform.SetParent(target);
         transform.localPosition = Vector3.zero;
@@ -33,7 +38,6 @@ public class AssemblyComponent : MonoBehaviour
 
         IsAssembled = true;
 
-        OnAssembled.AddListener(() => Debug.Log("ASSEMBLE"));
         OnAssembled?.Invoke();
     }
 }

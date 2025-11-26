@@ -1,10 +1,7 @@
 ﻿using UnityEngine;
-using System.Collections.Generic;
 
 public class SocketController : MonoBehaviour
-{
-    private List<SocketController> _partners = new();
-    
+{    
     private SocketGroup _group;
 
     public bool CanConnect;
@@ -14,23 +11,14 @@ public class SocketController : MonoBehaviour
     private void Start()
     {
         _group = transform.parent.GetComponent<SocketGroup>();
-        RegisterPartners();
     }
-    public void RegisterPartners()
-    {
-        _partners.Clear();
-        
-        for (int i = 0; i < transform.parent.childCount; i++)
-        {
-            if (transform.parent.GetChild(i) != transform && transform.parent.GetChild(i).TryGetComponent<SocketController>(out SocketController newSocket))
-            {
-                _partners.Add(newSocket);
-            }
-        }
-    }
+
     public void SetConnectionEnable(bool set)
     {
         CanConnect = set;
+
+        if (_group.EvaluateSocketConnectionsEnable(true))
+            _group.OnEverySocketEnabled?.Invoke();
     }
     public void SetConnection(bool set)
     {        
@@ -46,27 +34,18 @@ public class SocketController : MonoBehaviour
     {
         if (!CanConnect) return;
 
-        if (!EvaluatePartnersConnection()) return;
+        SetConnection(true);
 
-        if (other.TryGetComponent<AssemblyComponent>(out AssemblyComponent otherComponent))
-        {
-            if (otherComponent.Data != _group._targetComponent) return;
-
-            otherComponent.Assemble(_group.TargetTransform);
-            
-            SetAssemble(true);
-        }
+        if (!_group.EvaluateSocketConnections(true)) return;
         
+        _group.SetTracked(other.transform);
     }
-    public bool EvaluatePartnersConnection()
+    public void RequestDesconnection(Collider other)
     {
-        for (int i = 0; i < _partners.Count; i++)
-        {
-            if (!_partners[i].IsConnected)
-            {
-                return false;
-            }
-        }
-        return true;
+        SetConnection(false);
+
+        if (!_group.EvaluateSocketConnections(false)) return;
+        
+        _group.SetTracked(null);
     }
 }

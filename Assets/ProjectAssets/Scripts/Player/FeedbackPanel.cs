@@ -31,7 +31,6 @@ public class FeedbackPanel : MonoBehaviour
                 if (_componentInfoUI[i].TryGetComponent<ComponentInfoUI>(out ComponentInfoUI found))
                 {
                     found.CheckComponentAsValue(true);
-                    Debug.Log("YES");
                 }
                 break;
             }

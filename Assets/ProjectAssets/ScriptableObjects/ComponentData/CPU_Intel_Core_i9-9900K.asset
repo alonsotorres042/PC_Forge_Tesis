@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6af376a18c32344cbf14c48ea560153, type: 3}
   m_Name: CPU_Intel_Core_i9-9900K
   m_EditorClassIdentifier: 
+  ComponentType: 2
   Name: "Intel\xAE Core\u2122 i9-9900K"
   Features:
   - "N\xFAcleos/Hilos: 8C / 16T."
@@ -20,3 +21,4 @@ MonoBehaviour:
   - 'TDP: 95W.'
   - 'Memoria soportada: DDR4 hasta 2666 MHz (oficial).'
   - "Gr\xE1ficos integrados: Intel UHD 630."
+  AssemblyAdvice: No advice yet

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6af376a18c32344cbf14c48ea560153, type: 3}
   m_Name: GPU_MSI GeForce_GTX_750_Ti_2GB_GDDR5
   m_EditorClassIdentifier: 
-  ComponentType: 2
+  ComponentType: 3
   Name: MSI GeForce GTX 750 Ti 2GB GDDR5
   Features:
   - 'Arquitectura: NVIDIA Maxwell.'
@@ -22,3 +22,4 @@ MonoBehaviour:
   - 'Interfaz: PCIe 3.0 x16.'
   - 'Salidas: HDMI, DVI, VGA.'
   - 'Longitud: ~17 cm (compacta).'
+  AssemblyAdvice: No advice yet

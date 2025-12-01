@@ -9,11 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6af376a18c32344cbf14c48ea560153, type: 3}
-  m_Name: PowerSupply_OldPowerSupply
+  m_Script: {fileID: 11500000, guid: 0a021add8003f7e4e9046ed645fe7a4a, type: 3}
+  m_Name: OnSelectedComponent
   m_EditorClassIdentifier: 
-  ComponentType: 7
-  Name: Old Power Supply
-  Features:
-  - Old Power Supply
-  AssemblyAdvice: Power Supply advice

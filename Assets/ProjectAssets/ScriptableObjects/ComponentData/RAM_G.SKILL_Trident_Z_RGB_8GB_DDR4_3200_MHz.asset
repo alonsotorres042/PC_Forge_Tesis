@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6af376a18c32344cbf14c48ea560153, type: 3}
   m_Name: RAM_G.SKILL_Trident_Z_RGB_8GB_DDR4_3200_MHz
   m_EditorClassIdentifier: 
-  ComponentType: 4
+  ComponentType: 5
   Name: G.SKILL Trident Z RGB 8GB DDR4 3200 MHz
   Features:
   - 'Capacidad: 8GB.'
@@ -21,3 +21,4 @@ MonoBehaviour:
   - 'Latencia: CL16.'
   - 'Compatibilidad: Dual Channel.'
   - "Est\xE9tica: RGB personalizable."
+  AssemblyAdvice: No advice yet

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6af376a18c32344cbf14c48ea560153, type: 3}
   m_Name: Cooler_Intel_Stock
   m_EditorClassIdentifier: 
+  ComponentType: 1
   Name: Intel Stock
   Features:
   - "Tipo: Disipador por aire b\xE1sico."
@@ -19,3 +20,4 @@ MonoBehaviour:
   - 'Rendimiento: Limitado para CPUs de gama alta como i9-9900K.'
   - 'Nivel de ruido: Moderado/alto.'
   - "Instalaci\xF3n: Clips de presi\xF3n."
+  AssemblyAdvice: Para ensamblar Intel Stock

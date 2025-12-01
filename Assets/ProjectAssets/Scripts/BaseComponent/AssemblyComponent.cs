@@ -1,3 +1,4 @@
+using Oculus.Interaction;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -9,15 +10,24 @@ public class AssemblyComponent : MonoBehaviour
     [SerializeField] private List<Behaviour> _disableComponents;
 
     public bool IsAssembled;
-    public UnityEvent OnAssembled;
+    public UnityEvent<ComponentData> OnAssembled;
+    public UnityEvent<ComponentData> OnSelect;
 
     private Rigidbody _rigidbody;
     private BoxCollider _boxCollider;
+    private InteractableUnityEventWrapper _interactionWrapper;
 
     private void Awake()
     {
+        ComponentManager.Instance.RegisterComponent(Data);
+
         _rigidbody = GetComponent<Rigidbody>();
         _boxCollider = GetComponent<BoxCollider>();
+        _interactionWrapper = GetComponent<InteractableUnityEventWrapper>();
+    }
+    private void Start()
+    {
+        _interactionWrapper.WhenSelect.AddListener(() => OnSelect?.Invoke(Data));
     }
     public void Assemble(Transform target)
     {
@@ -38,6 +48,6 @@ public class AssemblyComponent : MonoBehaviour
 
         IsAssembled = true;
 
-        OnAssembled?.Invoke();
+        OnAssembled?.Invoke(Data);
     }
 }

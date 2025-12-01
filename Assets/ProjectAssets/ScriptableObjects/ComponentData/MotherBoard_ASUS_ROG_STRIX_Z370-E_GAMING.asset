@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6af376a18c32344cbf14c48ea560153, type: 3}
   m_Name: Motherboard_ASUS_ROG_STRIX_Z370-E_GAMING
   m_EditorClassIdentifier: 
-  ComponentType: 3
+  ComponentType: 4
   Name: ASUS ROG STRIX Z370-E GAMING
   Features:
   - "Socket: LGA1151 (8\xAA y 9\xAA gen Intel)."
@@ -23,3 +23,4 @@ MonoBehaviour:
   - "Almacenamiento: 2\xD7 M.2, 6\xD7 SATA III."
   - 'Conectividad: USB 3.1 Gen2, USB-C, WiFi, Bluetooth.'
   - "Energ\xEDa: 24 pines ATX + 8 pines CPU."
+  AssemblyAdvice: No advice yet

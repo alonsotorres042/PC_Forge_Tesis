@@ -6,11 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/ProjectAssets/Scenes/TutorialInteractivo.unity
-    guid: 7ed6778f8a5c3304ebce97318cc8318b
-  - enabled: 1
     path: Assets/ProjectAssets/Scenes/MenuPrincipal.unity
-    guid: 380e1ee5aee2ba7419450ef0e780c8c9
+    guid: b9defb880a2103847977b32a37a25319
+  - enabled: 1
+    path: Assets/ProjectAssets/Scenes/TutorialInteractivo.unity
+    guid: 245a50e8665343847b17d992989291eb
+  - enabled: 1
+    path: Assets/ProjectAssets/Scenes/EnsamblajeGuiado.unity
+    guid: 84ca1b475cfa24543843c45c5d78d953
   - enabled: 1
     path: Assets/ProjectAssets/Scenes/ModoLibre.unity
     guid: 864480d9c2958f646a8cc3a83033ebf7

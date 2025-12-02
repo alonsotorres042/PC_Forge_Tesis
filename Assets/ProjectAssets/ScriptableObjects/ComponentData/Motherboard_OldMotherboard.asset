@@ -16,4 +16,5 @@ MonoBehaviour:
   Name: Old Motherboard
   Features:
   - Old Motherboard
-  AssemblyAdvice: Motherboard advice
+  AssemblyAdvice: Posicionalo dentro de la caja sobre los sockets en la posicion
+    y rotacion correcta

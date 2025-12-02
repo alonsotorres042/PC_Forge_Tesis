@@ -16,4 +16,5 @@ MonoBehaviour:
   Name: Old Floppy Disk Reader
   Features:
   - Old Floppy Disk Reader
-  AssemblyAdvice: Para ensamblar Old Floppy Disk Reader
+  AssemblyAdvice: Colocar en la ranura ubicada al centro de la parte frontal del
+    case.

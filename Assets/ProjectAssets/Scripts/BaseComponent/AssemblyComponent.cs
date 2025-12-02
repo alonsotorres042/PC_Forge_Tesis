@@ -19,8 +19,6 @@ public class AssemblyComponent : MonoBehaviour
 
     private void Awake()
     {
-        ComponentManager.Instance.RegisterComponent(Data);
-
         _rigidbody = GetComponent<Rigidbody>();
         _boxCollider = GetComponent<BoxCollider>();
         _interactionWrapper = GetComponent<InteractableUnityEventWrapper>();

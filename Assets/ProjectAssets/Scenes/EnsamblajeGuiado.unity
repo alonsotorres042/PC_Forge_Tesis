@@ -4563,6 +4563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Data: {fileID: 11400000, guid: 1ca5493393c86f049a1321c7e176b550, type: 2}
+  _targetGroup: {fileID: 0}
   _disableComponents:
   - {fileID: 5342776435533329734}
   - {fileID: 821965158974993129}
@@ -4574,6 +4575,9 @@ MonoBehaviour:
   OnSelect:
     m_PersistentCalls:
       m_Calls: []
+  _enableLine: 0
+  _meshObject: {fileID: 0}
+  _meshMaterial: {fileID: 0}
 --- !u!1 &163073845
 GameObject:
   m_ObjectHideFlags: 0
@@ -33628,7 +33632,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &928953072
 Transform:
   m_ObjectHideFlags: 0
@@ -48646,6 +48650,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 928953072}
     m_Modifications:
+    - target: {fileID: 2641093645566848568, guid: 7e00d06b0817c0042bbf3e896f309731, type: 3}
+      propertyPath: IsAssembled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2641093645566848568, guid: 7e00d06b0817c0042bbf3e896f309731, type: 3}
+      propertyPath: _enableLine
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4011439637147422403, guid: 7e00d06b0817c0042bbf3e896f309731, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.602
@@ -59021,6 +59033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Data: {fileID: 11400000, guid: 2cdbc5eed3e37f7479ccc0da7449954e, type: 2}
+  _targetGroup: {fileID: 0}
   _disableComponents:
   - {fileID: 5290790995953694232}
   - {fileID: 4523191031974629799}
@@ -59032,6 +59045,9 @@ MonoBehaviour:
   OnSelect:
     m_PersistentCalls:
       m_Calls: []
+  _enableLine: 0
+  _meshObject: {fileID: 0}
+  _meshMaterial: {fileID: 0}
 --- !u!1 &1706741869
 GameObject:
   m_ObjectHideFlags: 0
@@ -71065,7 +71081,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7473389650306812365, guid: 339b92f710e075d4fa7ac386eb229015, type: 3}
       propertyPath: m_Size.y
-      value: 0.01
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 7473389650306812365, guid: 339b92f710e075d4fa7ac386eb229015, type: 3}
       propertyPath: m_Size.z
@@ -72832,7 +72848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2037285769
 Transform:
   m_ObjectHideFlags: 0
@@ -76218,6 +76234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Data: {fileID: 11400000, guid: d14895152c0eeb34aa2ff48dc812b42a, type: 2}
+  _targetGroup: {fileID: 0}
   _disableComponents: []
   IsAssembled: 0
   OnAssembled:
@@ -76226,6 +76243,9 @@ MonoBehaviour:
   OnSelect:
     m_PersistentCalls:
       m_Calls: []
+  _enableLine: 0
+  _meshObject: {fileID: 0}
+  _meshMaterial: {fileID: 0}
 --- !u!1 &2102139955
 GameObject:
   m_ObjectHideFlags: 0
@@ -77572,6 +77592,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4673003450448931694, guid: 7ac8ec730d6b6554f8236923d6ab48a6, type: 3}
+      propertyPath: IsAssembled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673003450448931694, guid: 7ac8ec730d6b6554f8236923d6ab48a6, type: 3}
+      propertyPath: _enableLine
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4766619368994336117, guid: 7ac8ec730d6b6554f8236923d6ab48a6, type: 3}
       propertyPath: m_Name
       value: OldOpticalDiskReader
@@ -78014,6 +78042,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 928953072}
     m_Modifications:
+    - target: {fileID: 1012811896527474920, guid: f60b9d5cf6109b048be554d6295b364e, type: 3}
+      propertyPath: IsAssembled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1012811896527474920, guid: f60b9d5cf6109b048be554d6295b364e, type: 3}
+      propertyPath: _enableLine
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2320069201995954740, guid: f60b9d5cf6109b048be554d6295b364e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.4186
@@ -78793,6 +78829,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9039420617256286554, guid: 0d9ef88c356b57243b9771e84ea4df7e, type: 3}
+      propertyPath: IsAssembled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039420617256286554, guid: 0d9ef88c356b57243b9771e84ea4df7e, type: 3}
+      propertyPath: _enableLine
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9139250355705518651, guid: 0d9ef88c356b57243b9771e84ea4df7e, type: 3}
       propertyPath: m_Name
       value: OldHardDisk
@@ -79236,6 +79280,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldCaseCover
       objectReference: {fileID: 0}
+    - target: {fileID: 8049695095352289779, guid: fbb36d1f41a1bb049a14a4380dbe06aa, type: 3}
+      propertyPath: IsAssembled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8049695095352289779, guid: fbb36d1f41a1bb049a14a4380dbe06aa, type: 3}
+      propertyPath: _enableLine
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8518220894722998707, guid: fbb36d1f41a1bb049a14a4380dbe06aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.489
@@ -79546,6 +79598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Data: {fileID: 11400000, guid: 1f154fc1ad66a6248854145d82d2b9f0, type: 2}
+  _targetGroup: {fileID: 0}
   _disableComponents:
   - {fileID: 4219224978284682376}
   - {fileID: 6420206817594352899}
@@ -79557,6 +79610,9 @@ MonoBehaviour:
   OnSelect:
     m_PersistentCalls:
       m_Calls: []
+  _enableLine: 0
+  _meshObject: {fileID: 0}
+  _meshMaterial: {fileID: 0}
 --- !u!114 &8222346733366498091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79631,6 +79687,14 @@ PrefabInstance:
     - target: {fileID: 2304757377666211791, guid: af1ef40d706febd45b1b2c6d8df02e9e, type: 3}
       propertyPath: m_Name
       value: OldFloppyDiskReader
+      objectReference: {fileID: 0}
+    - target: {fileID: 2980755833251488636, guid: af1ef40d706febd45b1b2c6d8df02e9e, type: 3}
+      propertyPath: IsAssembled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2980755833251488636, guid: af1ef40d706febd45b1b2c6d8df02e9e, type: 3}
+      propertyPath: _enableLine
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7430126204388183070, guid: af1ef40d706febd45b1b2c6d8df02e9e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -79757,6 +79821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Data: {fileID: 11400000, guid: 3596c53746fad274bad8aa7ee0b01954, type: 2}
+  _targetGroup: {fileID: 0}
   _disableComponents:
   - {fileID: 3486734921006988513}
   - {fileID: 8880066055891811547}
@@ -79768,6 +79833,9 @@ MonoBehaviour:
   OnSelect:
     m_PersistentCalls:
       m_Calls: []
+  _enableLine: 0
+  _meshObject: {fileID: 0}
+  _meshMaterial: {fileID: 0}
 --- !u!33 &8902864214587052352
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -79999,6 +80067,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 073e3dc83cc6e234da6c9ba9c686c196, type: 2}
   - {fileID: 11400000, guid: 10fdda8a4a339c444b697ccdf79d2833, type: 2}
   - {fileID: 11400000, guid: 15d1dff34bc468e4a9096d1fd50dd5b5, type: 2}
+  _socketGroups: []
   _showAdvice: 1
   _adviceText: {fileID: 1977038364}
   OnEveryComponentAssembled:

@@ -7,6 +7,7 @@ public class ComponentManager : NonPersistentSingleton<ComponentManager>
 {
     [Tooltip("Only component in this list will set an advice at UI")]
     [SerializeField] private List<ComponentData> _targetAssemblies; //The component that should be assembled to complete this scene
+    [SerializeField] private List<SocketGroup> _socketGroups; //Collecting information about every socket group
     [SerializeField] private bool _showAdvice;
     [SerializeField] private TextMeshProUGUI _adviceText;
 
@@ -28,6 +29,16 @@ public class ComponentManager : NonPersistentSingleton<ComponentManager>
             OnEveryComponentAssembled?.Invoke();
             
     }
+    public void RegisterSocketGroup(SocketGroup newGroup)
+    {
+        if (!_socketGroups.Contains(newGroup))
+            _socketGroups.Add(newGroup);
+    }
+    public void UnregisterSocketGroup(SocketGroup newGroup)
+    {
+        if (_socketGroups.Contains(newGroup))
+            _socketGroups.Remove(newGroup);
+    }
     public void SetAdviceByIndex(int index)
     {
         if (!_showAdvice) return;
@@ -45,5 +56,18 @@ public class ComponentManager : NonPersistentSingleton<ComponentManager>
 
         if (_targetAssemblies.Contains(data))
             _adviceText.text = data.AssemblyAdvice;
+    }
+    public SocketGroup SetSocketGroupbyData(ComponentData data)
+    {
+        if(!_targetAssemblies.Contains(data)) return null;
+
+        for (int i = 0; i < _socketGroups.Count; i++)
+        {
+            if (_socketGroups[i].TargetComponent == data)
+            {
+                return _socketGroups[i];
+            }
+        }
+        return null;
     }
 }

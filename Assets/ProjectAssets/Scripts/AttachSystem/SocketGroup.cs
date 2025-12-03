@@ -18,6 +18,10 @@ public class SocketGroup : MonoBehaviour
     public UnityEvent OnEverySocketEnabled;
     public UnityEvent OnAssembled;
 
+    private void Awake()
+    {
+        ComponentManager.Instance.RegisterSocketGroup(this);
+    }
     private void Start()
     {
         RegisterSockets();
